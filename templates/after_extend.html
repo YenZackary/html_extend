@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <div class="content" id="content">
+        <h2>About Me</h2>
+        <p>This is my complete collection of technology learning notes.</p>
+    </div>
+    
+    {% block extra_styles %}
+    <style>
+        .content {
+        flex-grow: 1;
+        padding: 20px;
+        margin-left: 50px;
+        margin-top: 60px;
+        transition: margin-left 0.3s ease;
+    }
+    </style>
+    {% endblock %}
+{% endblock %}
